@@ -1,0 +1,495 @@
+
+.me{
+  display: block;
+  height: 600px;
+  width: 100%;
+  margin-top: -98px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-image:url(image-path('me.jpg'));
+  z-index: -1;
+}
+
+#me-mobile{
+  display: none;
+  z-index: -1;
+}
+
+.video-overlay{
+  background-color: #fff;
+  width: 100%;
+  height: 1200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+
+section#content{
+  opacity:0;
+  -webkit-animation:fadeIn ease-in 1;
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:0.5s;
+  -moz-animation-duration:0.5s;
+  animation-duration:0.5s;
+}
+
+.bio{
+  margin-top: 75px;
+  padding-bottom: 55px;
+
+  opacity:0;
+  -webkit-animation:fadeIn ease-in 1;
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:0.5s;
+  -moz-animation-duration:0.5s;
+  animation-duration:0.5s;
+}
+
+.bio h1{
+  color: #777;
+  font-size: 23px;
+  font-family: "freight-sans-pro", helvetica, sans-serif;
+  line-height: 1.625;
+  letter-spacing: 0.03em;
+}
+
+.bio h2{
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 2px;
+  color: #bbb;
+}
+
+.bio img{
+  width: 200px;
+  height: 65px;
+}
+
+.twitter:hover{
+  color: #55acee;
+}
+
+.dribbble:hover{
+  color: #ea4c89;
+}
+
+.behance:hover{
+  color: #1769ff;
+}
+
+.instagram:hover{
+  color: #3f6f97;
+}
+
+.linkedin:hover{
+  color: #0976b4;
+}
+
+.line{
+  height: 2px;
+  background-color: #ddd;
+  border-bottom:2px solid #ddd;
+}
+
+.etc, .awards{
+  margin-top: 75px;
+}
+
+.etc h1, .awards h1{
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 2px;
+  color: #777;
+}
+
+.etc h2, .music ul, .awards h2{
+  font-size: 20px;
+  font-family: "freight-sans-pro", helvetica, sans-serif;
+  line-height: 1.6;
+  letter-spacing: 0.035em;
+  color: #777;
+}
+
+.etc h2 a, .music ul a, .awards h2 a{
+  font-weight: 400;
+}
+
+.awards h2{
+  width: 80%;
+}
+
+.awards b{
+  font-weight: 400;
+}
+
+#artist h2{
+  color: #bbb;
+}
+
+ul#recentTrack{
+  padding-top: 5px;
+}
+
+ul#recentTrack li {
+  overflow: hidden;
+  margin-left: -16px;
+}
+
+.music img{
+  margin-right: 4px;
+}
+
+.friends, .music{
+  padding-bottom: 50px;
+}
+
+.awards h2{
+  padding-bottom: 65px;
+}
+
+.friends2{
+  padding-top: 54px;
+}
+
+footer{
+  height: 200px;
+}
+
+.contact{
+  line-height: 200px;
+  color: #777;
+  font-size: 20px;
+  font-family: "freight-sans-pro", helvetica, sans-serif;
+  letter-spacing: 0.035em;
+  font-weight: 300;
+}
+
+.contact a{
+  font-weight: 500;
+}
+
+.social ul{
+  list-style-type: none;
+  text-align: right;
+  margin-right: 50px;
+}
+
+.social li{
+  display: inline;
+  margin-right: 55px;
+}
+
+#social-icon{
+  position: relative;
+}
+
+#social-icon img{
+  margin-top: 87px;
+  margin-bottom: 87px;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#social-icon img.social-icon-hover{
+  opacity: 0;
+}
+
+#social-icon img.social-icon-hover:hover{
+  opacity: 1;
+}
+
+/*==============Animations==============*/
+
+@-webkit-keyframes fadeIn{
+  from { opacity:0; }
+  to { opacity:1; }
+}
+
+@-moz-keyframes fadeIn {
+  from { opacity:0; }
+  to { opacity:1; }
+}
+
+@keyframes fadeIn {
+  from { opacity:0; }
+  to { opacity:1; }
+}
+
+/*===============Media Queries===============*/
+
+/* For Video: Extra Large Displays */
+
+@media only screen and (min-width: 2100px){
+
+.me {
+  height: 900px;
+}
+
+}
+
+@media only screen and (min-width: 1800px) and (max-width:2099px){
+
+.me {
+  height: 800px;
+}
+
+}
+
+@media only screen and (min-width: 1500px) and (max-width:1799px){
+
+.me {
+  height: 700px;
+}
+
+
+}
+
+@media only screen and (max-width:1024px){
+
+#me-mobile{
+  height: 50%;
+  width: 100%;
+  text-align: center;
+  display: block;
+  margin-top: -98px;
+  position: relative;
+  display: block;
+  z-index: -1;
+}
+
+}
+
+/* Medium Displays: 641px and up */
+@media only screen and (min-width: 641px) and (max-width:1024px){
+
+body{
+  font-weight: 400;
+}
+
+a{
+  font-weight: 600;
+}
+
+.me{
+  display: none;
+}
+
+.navigation{
+  display: block;
+}
+
+.navigation-mobile{
+  display: none;
+}
+
+.navigation li a{
+  font-weight: 600;
+}
+
+.navigation li.menu2 a{
+  font-weight: 600;
+}
+
+.menu{
+  display: none;
+}
+
+.bio{
+  margin-top: 50px;
+  padding-bottom: 60px;
+}
+
+.bio h1{
+  font-size: 23px;
+  font-weight: 400;
+}
+
+.friends, .music{
+  padding-bottom: 50px;
+}
+
+.etc h2, .music ul, .awards h2{
+  font-size: 20px;
+  font-family: "freight-sans-pro", helvetica, sans-serif;
+  line-height: 1.6;
+  letter-spacing: 0.035em;
+  color: #777;
+  font-weight: 400;
+}
+
+.etc h2 a, .music ul a, .awards h2 a{
+  font-weight: 500;
+}
+
+.awards b{
+  font-weight: 500;
+}
+
+.contact{
+  line-height: 160px;
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 400;
+}
+
+.social ul{
+  list-style-type: none;
+  text-align: center;
+  margin-left: -27px;
+  margin-right: 0px;
+}
+
+.social li{
+  display: inline;
+  margin-left: 27px;
+  margin-right: 27px;
+}
+
+#social-icon img{
+  margin-top: -60px;
+}
+
+
+}
+
+
+/* Small Displays*/
+@media only screen and (max-width: 640px){
+
+body{
+  font-weight: 400;
+}
+
+a{
+  font-weight: 600;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+ }
+
+.navigation{
+  display: none;
+}
+
+.navigation-mobile{
+  margin-top: 0px;
+  display: none;
+  margin-left: -18px;
+}
+
+.navigation-mobile li{
+  list-style-type: none;
+  padding: 20px;
+  padding-left: 30px;
+  border-bottom: 2px solid #ddd;
+}
+
+.navigation-mobile li a{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 2px;
+  color: #bbb;
+}
+
+.navigation-mobile li.menu-active a{
+  color: #777;
+}
+
+.menu{
+  margin-top: 50px;
+  display: block;
+}
+
+.me {
+  display: none;
+}
+
+.bio{
+  margin-top: 40px;
+  padding-bottom: 60px;
+}
+
+.bio h1{
+  font-size: 20px;
+}
+
+.friends{
+  padding-bottom: 0px;
+}
+
+.friends2{
+  padding-top: 0px;
+  margin-top: -10px;
+  padding-bottom: 50px;
+}
+
+.music{
+  padding-bottom: 50px;
+}
+
+ul#recentTrack{
+  padding-top: 0px;
+}
+
+
+.awards b{
+  font-weight: 500;
+}
+
+.contact{
+  line-height: 160px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.social ul{
+  list-style-type: none;
+  text-align: center;
+  margin-left: -27px;
+  margin-right: 0px;
+}
+
+.social li{
+  display: inline;
+  margin-left: 27px;
+  margin-right: 27px;
+}
+
+#social-icon img{
+  margin-top: -60px;
+}
+
+}
+
+@media only screen and (max-width: 400px){
+
+.contact{
+  font-size: 18px;
+}
+
+}
