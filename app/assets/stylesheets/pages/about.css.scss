@@ -1,11 +1,11 @@
 
 .me{
   display: block;
-  height: 600px;
+  height: 410px;
   width: 100%;
   margin-top: -98px;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center -30px;
   background-size: cover;
   background-image:url(image-path('me.jpg'));
   z-index: -1;
@@ -76,10 +76,10 @@ section#content{
   color: #bbb;
 }
 
-.bio img{
-  width: 200px;
-  height: 65px;
-}
+// .bio img{
+//   width: 200px;
+//   height: 65px;
+// }
 
 .twitter:hover{
   color: #55acee;
@@ -260,7 +260,7 @@ footer{
 @media only screen and (min-width: 1500px) and (max-width:1799px){
 
 .me {
-  height: 700px;
+  height: 400px;
 }
 
 
