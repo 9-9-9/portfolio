@@ -8,35 +8,41 @@ header
 section.content
   .row
     .large-10.large-centered.columns.bio
+      h1.main-title
+        | Hi, I'm Matt - a Web, UX and Brand designer.
       h1
-        | Matt Bilbow
-        br
-        br
-        | Hi there, I'm a Web, UX and Brand designer.
         br
         br
         | I'm based in Hertford, a small Shire town on the magical isles of Great Britain. I currently work as the lead Designer in an amazing Research &amp; Development team over at&nbsp;
         = link_to 'LCN.com', 'http://www.lcn.com', :target => '_blank'
-
+        br
+section.content.grey
+  .row
+    .large-10.large-centered.columns.bio
+      h1.grey-title
+        | Here's some of the bits &amp; bobs i've created over the years&hellip;
       - @shots.each_with_index do |shot, index|
-        .large-6.columns
-          = image_tag shot.image_url
+        .shots-container
+          .small-4.columns.shot-container
+            a(href="#{shot.url}" target="_blank")
+              = image_tag shot.image_url, :width => '487', :class => 'shot'
 
+      h1.clearfix
+        br
+section.content
+  .row
+    .large-10.large-centered.columns.bio
       h1
+        | I feel that it's important as a creative to have a solid grasp of programming &amp; development, after all you can't always rely on others to bring your ideas to life! I have professional experience as a Ruby on Rails and PHP Developer. I've also studied Javascript patterns in depth and am familiar with all common JS frameworks.
         br
         br
-        | I've explored a lot of different creative fields; from fine art, illustration, and now graphic design. Then one day, I came across product design, and fell in love. Detailed designs, engaging interactions, unique experiences… they all combined to help solve people's problems and enhance their lives. But above all, what fascinated the most about product design was how it ultimately makes people happy through a meaningful and delightful experience.
-        br
-        br
-        | Since then I've been practicing product design and been living day-to-day exploring, questioning, and tackling new challenges to become a better designer – a designer who creates products that make people's day. The kid in me still enjoys drawing, so I've been practicing illustration on the side.
-        br
-        br
-        | Thanks for visiting and feel free to drop me a line at
-        | Unfortunately, I won't be accepting any work because I'll be in New York and Menlo Park for exciting internship opportunities until later this year. However, I'd still love to meet up and have a chat over coffee. With wings and beer? Even better!
+        | Thanks for visiting. Drop me a line at
+        a href="mailto:hi@mattbilbow.co.uk"  hi@mattbilbow.co.uk
+        | . I'm available for freelance design work and consultation.
         br
         br
         | Kind Regards,
         br
-        =image_tag "signature.jpg"
+        =image_tag "signature.jpg", :width => '280'
         br
         | Matt Bilbow

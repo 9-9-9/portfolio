@@ -1,4 +1,6 @@
-
+.bio a {
+  color : #ff7d6f;
+}
 .me{
   display: block;
   height: 410px;
@@ -10,6 +12,36 @@
   background-image:url(image-path('me.jpg'));
   z-index: -1;
 }
+
+.main-title  {
+  color : #fff !important;
+  margin-top : -200px;
+  margin-bottom : 90px;
+  font-size : 32px !important;
+}
+
+section.grey {
+  background : #efefef;
+}
+
+.grey-title {
+  margin-bottom : 30px;
+}
+
+.shot {
+  border : 6px solid #fff;
+}
+
+.shot-container {
+  padding : 7px !important;
+}
+
+.shots-container {
+  margin-left : -7px;
+}
+
+
+section.grey .row .small-4 {padding : 0;}
 
 #me-mobile{
   display: none;
@@ -203,22 +235,19 @@ footer{
 #social-icon img{
   margin-top: 87px;
   margin-bottom: 87px;
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  -moz-transition: opacity 0.3s ease-in-out;
-  -o-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
+  width: 30px !important;
+  height: 30px !important;
+  max-width : 30px !important;
+  // position: absolute;
 }
 
-#social-icon img.social-icon-hover{
-  opacity: 0;
-}
-
-#social-icon img.social-icon-hover:hover{
-  opacity: 1;
-}
+// #social-icon img.social-icon-hover{
+//   opacity: 0;
+// }
+//
+// #social-icon img.social-icon-hover:hover{
+//   opacity: 1;
+// }
 
 /*==============Animations==============*/
 
@@ -263,23 +292,8 @@ footer{
   height: 400px;
 }
 
-
 }
 
-@media only screen and (max-width:1024px){
-
-#me-mobile{
-  height: 50%;
-  width: 100%;
-  text-align: center;
-  display: block;
-  margin-top: -98px;
-  position: relative;
-  display: block;
-  z-index: -1;
-}
-
-}
 
 /* Medium Displays: 641px and up */
 @media only screen and (min-width: 641px) and (max-width:1024px){
@@ -294,6 +308,13 @@ a{
 
 .me{
   display: none;
+}
+
+.main-title  {
+  color : #333 !important;
+  margin-top : 0px;
+  margin-bottom : 0px;
+  font-size : 32px !important;
 }
 
 .navigation{
@@ -377,6 +398,13 @@ a{
 
 /* Small Displays*/
 @media only screen and (max-width: 640px){
+
+.main-title  {
+  color : #333 !important;
+  margin-top : 0px;
+  margin-bottom : 0px;
+  font-size : 32px !important;
+}
 
 body{
   font-weight: 400;
@@ -490,6 +518,13 @@ ul#recentTrack{
 
 .contact{
   font-size: 18px;
+}
+
+.main-title  {
+  color : #333 !important;
+  margin-top : 0px;
+  margin-bottom : 0px;
+  font-size : 32px !important;
 }
 
 }
