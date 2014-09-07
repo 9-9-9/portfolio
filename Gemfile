@@ -8,6 +8,7 @@ gem 'rails', '4.1.4'
 gem 'swish'
 
 gem 'mysql2'
+gem 'pg'
 #Slim, because I like it
 gem 'slim'
 # Use SCSS for stylesheets
