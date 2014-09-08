@@ -30,11 +30,12 @@ section.grey {
 }
 
 .shot {
-  border : 6px solid #fff;
+  border : none;
+  border-radius : 3px;
 }
 
 .shot-container {
-  padding : 7px !important;
+  padding : 12px !important;
 }
 
 .shots-container {
