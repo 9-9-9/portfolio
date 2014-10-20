@@ -6,9 +6,8 @@ body {
 h1 {
   font-family: 'freight-sans-pro','proxima-nova','Helvetica';
   color : #FF0000;
-  font-size: 26px;
+  font-size: 25px;
   text-transform : uppercase;
-  text-align: center;
 }
 
 h2 {
@@ -18,7 +17,7 @@ h2 {
   line-height: 30px;
   margin-top: 45px;
   color: #000;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 p {
@@ -43,7 +42,7 @@ p a {
 .markdown-paper {
   text-align: left;
   background : #fff;
-  width : 600px;
+  width : 610px;
   margin : 0 auto;
   padding : 30px;
 }
