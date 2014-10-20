@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="http://use.typekit.net/tmo7rdn.js" type="text/javascript"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script></head>
+<body>
+  <div class="markdown-paper">
+    <h1>Markdown Proposal <em>(written in markdown)</em></h1>
+
+    <p>Hi guys,</p>
+
+    <p>I've been having a chat with James about the potential integration of a WYSIWYG editor into the LCN application to compliment the new 'Write for us' section. I've had a good think about this and have put together this proposal for using Markdown as our format of choice. In my opinion Markdown it's awesome and is likely to be future 'peoples choice' for uploading written content to the web.</p>
+
+    <h2>Why we dislike traditional WYSIWYG editors</h2>
+
+    <ul>
+    <li><p>They're clumsy and slow - it's a fairly safe assumption to say that any talented writer will have their preferred method of formatting documents already, forcing them to work locally then paste their work into a small text box and reformat it with a WYSIWYG editor takes time and feel incredibly awkward.</p></li>
+    <li><p>Writers aren't designers - WYSIWYG editors force writers to make many design decisions that are completely unnecessary. They want to focus on their content yet spend almost as much time in the WYSIWYG editor making things readable.</p></li>
+    <li><p>Messy code! - This is a big one for us, WYSIWYG editors (even nice ones like redactor) produce messy code tags that aren't semantic, as well as all sorts of other bloat.</p></li>
+    <li><p>WYSIWYSG integration into the LCN application would be clunky - There would be new images, new css, new javascript all for one little bar, although this code would likely be vendored it most likely would not meet our new coding standards and at some point would want to be changed. As we have recently re-factored the LCN codebase i'd like us first to consider cleaner alternatives. libraries without considering cleaner alternatives as I know first hand the headaches they can cause down the line.</p></li>
+    </ul>
+     <p></p>
+
+    <h2>What we'd like to implement: Markdown!</h2>
+
+    <p>Markdown is great, think of it as a simplified WYSIWYG... simplified in the best way that ensures that our pages are being built correctly. In the words of Mike Fox:</p>
+
+    <blockquote>
+      <p>Markdown is so good it got Claire pregnant</p>
+    </blockquote>
+
+    <p>As part of our recent code re-factor we have created styles into the application that dictate how basic elements, like headers and links will appear, without the need for additional styling. By using markdown as opposed to a tradition WYSIWG editor potential writers would be able to see exactly how their article would look when published and style treatments would appear exactly as we want them to and we would avoid anything being larger, bolder, and brighter.</p>
+
+    <p>Markdown is widely accepted by developers and editors, so it's the best choice for implementing best practice. Nearly every popular content management solution supports Markdown, if not out-of-the-box, then with an easy-to-install extension.</p>
+
+    <h2>How would it work?</h2>
+
+    <p>A potential writer can either use our online markdown editor (WIP - nicer than just a text box) or work locally and paste
+    their markdown into our form. There are many nice (and free) markdown apps for Windows, Mac and Linux - but should they want to, they could just use notepad.</p>
+
+    <p>Upon submission, we would then save the application to our database in a neat, lightweight way without any WYSIWYG bloat. Then, just as with this doc, we can easily process and render that content in any way we like. The content would be available for use on the site, in our blog, even internally on wikis.</p>
+
+    <h2>Will it take long to implement?</h2>
+
+    <p>Not at all, we would require the use of 1 gem to process the markdown upon retrieving it from the database. This gem is called <a href="https://github.com/vmg/redcarpet" target="_blank">Redcarpet</a> and is well maintained.</p>
+
+    <p>For now we'd ask the writer to paste in their markdown.</p>
+
+    <p>We would also need changes to the Write for us page to inform them of our desired syntax, possibly with links to markdown resources. These changes should be trivial.</p>
+
+    <h2>What's this WIP editor you mentioned?</h2>
+
+    <p>Whilst we all get to grips with the awesomeness that is Markdown (shouldn't take long), I'd be working on our own Markdown editor to provide our writers with the <strong>ultimate</strong> publishing experience. It's based on an MIT licensed app called dillinger and the WIP can be seen at <a href="http://www.lcnmarkdownificator.com" target="_blank">lcnmarkdownificator.com</a></p>
+
+    <p>Once completed this could be rolled out either as an in page editor or a separate system.</p>
+
+    <h2>Final Thoughts</h2>
+
+    <p>Markdown is a new technology which is becoming incredibly popular, as a principal I feel we should be encouraging the use of new technologies use both internally and with anybody looking ti work with us. Let me know your thoughts. Thank you for reading.</p>
+  </div>
+</body>
+</html>
